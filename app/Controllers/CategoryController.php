@@ -11,15 +11,6 @@ class CategoryController extends Controller
 {
     private const PER_PAGE = 9;
 
-    public function index(): string
-    {
-        $connection = $this->container->make(\Framework\Database\Connection::class);
-        $category = new Category($connection);
-        $categories = $category->all();
-
-        return $this->view('categories.index', ['categories' => $categories]);
-    }
-
     public function posts(int $id): string
     {
         $connection = $this->container->make(\Framework\Database\Connection::class);
