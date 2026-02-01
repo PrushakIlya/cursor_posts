@@ -42,11 +42,6 @@ docker compose exec php php console.php seed
 
 6. **Open** http://localhost (Nginx on port 80).
 
-## Rebuild templates .tpl
-```bash
-npx webpack
-```
-
 ## Console Commands
 
 | Command | Description |
