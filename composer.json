@@ -1,0 +1,16 @@
+{
+    "name": "app/web_site",
+    "description": "Simple PHP framework",
+    "type": "project",
+    "require": {
+        "php": "<=8.5",
+        "smarty/smarty": "^5.7",
+        "ext-pdo": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Framework\\": "framework/"
+        }
+    }
+}

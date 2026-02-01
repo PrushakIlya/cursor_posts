@@ -1,0 +1,45 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.75rem;
+    border-radius: 8px;
+
+    &:hover {
+      background: rgba(59, 130, 246, 0.15);
+    }
+
+    &.active {
+      background: var(--accent);
+      color: var(--white);
+    }
+
+    &.toolbar__reset {
+      margin-left: auto;
+      background: transparent;
+      color: var(--accent);
+      font-weight: 600;
+
+      &:hover {
+        background: transparent;
+        color: var(--accent-hover);
+      }
+    }
+  }
+}
+
+.toolbar-label {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
